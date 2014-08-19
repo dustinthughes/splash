@@ -73,6 +73,11 @@ class ProxiedQNetworkAccessManager(QNetworkAccessManager):
         request = QNetworkRequest(request)
         old_proxy = self.proxy()
 
+        # Hack to change Language
+        request.setRawHeader("Accept-Language","fr-FR,fr;q=0.8");
+        #request.setRawHeader("Accept-Charset","ISO-8859-1,utf-8;q=0.7,*;q=0.7");
+        #request.setRawHeader("Connection","keep-alive");
+
         splash_proxy_factory = self._getSplashProxyFactory(request)
         if splash_proxy_factory:
             proxy_query = QNetworkProxyQuery(request.url())
