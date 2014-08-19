@@ -38,11 +38,6 @@ sudo apt-get -y autoremove
 ## TODO: change this to add pw w/o dialog
 
 ## Pull and extract and install splash 
-cd /tmp
-wget https://github.com/scrapinghub/splash/archive/1.0.tar.gz
-gunzip 1.0.tar.gz
-tar -xvf 1.0.tar
-cd splash-1.0
 python setup.py install
 
 # Append to hosts for splash
