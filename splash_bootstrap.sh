@@ -8,7 +8,11 @@ else
 
 # Change root password to 'hpod ...'
 ## Enter at prompt
+<<<<<<< HEAD
 ## TODO: change this to add pw w/o dialog
+=======
+
+>>>>>>> 7db153890b11de425e425dd76cac4df52bc4bb54
 
 # Add repository for latest Git
 sudo add-apt-repository -y ppa:git-core/ppa
